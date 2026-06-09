@@ -1,6 +1,8 @@
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
+body{
+    background:red;
+}
 *{
     margin:0;
     padding:0;
@@ -85,6 +87,15 @@ nav ul li a:hover{
     align-items:center;
     justify-content:space-between;
     gap:50px;
+
+    background:linear-gradient(
+        135deg,
+        #eff6ff,
+        #dbeafe,
+        #ffffff
+    );
+
+    border-radius:20px;
 }
 
 #home h1{
@@ -102,6 +113,63 @@ nav ul li a:hover{
 #home img{
     width:100%;
     max-width:500px;
+    .hero-tag{
+    display:inline-block;
+    background:#dbeafe;
+    color:#2563eb;
+    padding:8px 16px;
+    border-radius:30px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.hero-content{
+    flex:1;
+}
+
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:500px;
+    border-radius:20px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.secondary-btn{
+    background:white;
+    color:#2563eb;
+    border:2px solid #2563eb;
+}
+
+.secondary-btn:hover{
+    background:#2563eb;
+    color:white;
+}
+
+.hero-stats{
+    margin-top:40px;
+    display:flex;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.hero-stats h3{
+    color:#2563eb;
+    font-size:2rem;
+}
+
+.hero-stats p{
+    margin-top:5px;
+}
 }
 
 /* Features */
@@ -131,14 +199,11 @@ nav ul li a:hover{
     border-radius:15px;
     box-shadow:0 5px 15px rgba(0,0,0,0.08);
     transition:0.3s;
-    #features > div > div:hover{
-    transform:translateY(-10px);
-    box-shadow:0 10px 25px rgba(0,0,0,0.15);
-}
 }
 
 #features > div > div:hover{
     transform:translateY(-10px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
 }
 
 /* Impact */
@@ -228,12 +293,100 @@ button:hover{
 /* Footer */
 
 footer{
-    background:#0f172a;
+    background:#020617;
     color:white;
     text-align:center;
-    padding:40px;
+    padding:40px; 
+}
+#pricing{
+    padding:100px 40px;
+    text-align:center;
 }
 
+#pricing h2{
+    font-size:2.5rem;
+    margin-bottom:50px;
+}
+
+.pricing-container{
+    max-width:1200px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.price-card{
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.price-card:hover{
+    transform:translateY(-10px);
+}
+
+.featured{
+    border:3px solid #2563eb;
+}
+
+.price-card h1{
+    margin:20px 0;
+    backdrop-filter: blur(10px);
+}
+.hero-buttons{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.secondary-btn{
+    background:white;
+    color:#2563eb;
+    border:2px solid #2563eb;
+}
+
+.secondary-btn:hover{
+    background:#2563eb;
+    color:white;
+}
+nav ul li a{
+    position:relative;
+}
+nav ul li a::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:0;
+    height:2px;
+    background:#0f172a
+#2563eb
+#38bdf8;
+    transition:0.3s;
+}
+
+nav ul li a:hover::after{
+    width:100%;
+}
+/* Trusted By */
+#trusted{
+    text-align:center;
+    padding:50px 20px;
+}
+
+.trusted-logos{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:20px;
+    flex-wrap:wrap;
+    font-weight:600;
+    color:#64748b;
+}
 /* Responsive */
 
 @media(max-width:768px){
@@ -265,37 +418,4 @@ footer{
         flex-direction:column;
         gap:30px;
     }
-    .hero-buttons{
-    display:flex;
-    gap:15px;
-    flex-wrap:wrap;
-}
-
-.secondary-btn{
-    background:white;
-    color:#2563eb;
-    border:2px solid #2563eb;
-}
-
-.secondary-btn:hover{
-    background:#2563eb;
-    color:white;
-}
-nav ul li a{
-    position:relative;
-}
-nav ul li a::after{
-    content:'';
-    position:absolute;
-    left:0;
-    bottom:-5px;
-    width:0;
-    height:2px;
-    background:#2563eb;
-    transition:0.3s;
-}
-
-nav ul li a:hover::after{
-    width:100%;
-}
 }
