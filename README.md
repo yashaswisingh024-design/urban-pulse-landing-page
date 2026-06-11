@@ -134,8 +134,6 @@ Through this project, I learned:
 
 ### Yashaswi Singh
 
-B.Tech CSE Student | Web Development Enthusiast
-
 Developed as part of the **Navyan Web Development Internship** and my web development portfolio journey.
 
 ---
@@ -143,7 +141,5 @@ Developed as part of the **Navyan Web Development Internship** and my web develo
 <div align="center">
 
 ### ⭐ If you found this project interesting, consider giving it a star!
-
-by Yashaswi Singh
 
 </div>
